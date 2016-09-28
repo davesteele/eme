@@ -1,0 +1,15 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: eme
+Source: https://github.com/rfjakob/eme
+
+Files: *
+Copyright: 2015 
+License: TODO
+
+Files: debian/*
+Copyright: 2016 David Steele <David Steele@desktop.localhost>
+License: TODO
+Comment: Debian packaging is licensed under the same terms as upstream
+
+License: TODO
+TODO
