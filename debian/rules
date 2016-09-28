@@ -1,4 +1,17 @@
 #!/usr/bin/make -f
 
+PKD = $(word 1,$(abspath $(dir $(MAKEFILE_LIST))))
+PKG = $(shell dpkg-parsechangelog -l$(PKD)/changelog --show-field=Source)
+
+DEBIAN_VERSION = $(shell (dpkg-parsechangelog -l$(PKD)/changelog | grep Version | sed 's/Version..//' | sed 's/-.\+//'))
+PRODUCT_VERSION = $(shell (grep "version=" setup.py | sed "s/.\+'\(.\+\)'.\+/\1/"))
+VER ?= $(DEBIAN_VERSION)
+
 %:
 	dh $@ --buildsystem=golang --with=golang
+
+.PHONY get-orig-source:
+get-orig-source:  $(info I: $(PKG)_$(VER))
+	@echo "# Downloading..."
+	uscan --noconf --verbose --rename --destdir=$(CURDIR) --check-dirname-level=0 --force-download --download-version $(VER) $(PKD)
+	rm -f $(PKG)-$(VER).tar.gz.pgp
