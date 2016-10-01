@@ -1,5 +1,5 @@
-golang-github-rfjakob-eme (1.0-1) UNRELEASED; urgency=medium
+golang-github-rfjakob-eme (1.0-1) unstable; urgency=medium
 
-  * Initial release (Closes: TODO)
+  * Initial release (Closes: #839402)
 
- -- David Steele <David Steele@desktop.localhost>  Tue, 27 Sep 2016 20:35:24 -0400
+ -- David Steele <steele@debian.org>  Tue, 27 Sep 2016 20:35:24 -0400
