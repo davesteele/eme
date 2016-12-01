@@ -9,7 +9,7 @@ Build-Depends: debhelper (>= 10),
 Standards-Version: 3.9.8
 Homepage: https://github.com/rfjakob/eme
 Vcs-Browser: https://anonscm.debian.org/cgit/pkg-go/packages/golang-github-rfjakob-eme.git
-Vcs-Git: git://anonscm.debian.org/pkg-go/packages/golang-github-rfjakob-eme.git -b debian
+Vcs-Git: https://anonscm.debian.org/git/pkg-go/packages/golang-github-rfjakob-eme.git -b debian
 XS-Go-Import-Path: github.com/rfjakob/eme
 
 Package: golang-github-rfjakob-eme-dev
