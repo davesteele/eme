@@ -5,7 +5,7 @@ Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org
 Uploaders: David Steele <steele@debian.org>
 Build-Depends: debhelper (>= 10),
                dh-golang,
-               golang-go
+               golang-any
 Standards-Version: 3.9.8
 Homepage: https://github.com/rfjakob/eme
 Vcs-Browser: https://anonscm.debian.org/cgit/pkg-go/packages/golang-github-rfjakob-eme.git
@@ -15,8 +15,7 @@ XS-Go-Import-Path: github.com/rfjakob/eme
 Package: golang-github-rfjakob-eme-dev
 Architecture: all
 Depends: ${shlibs:Depends},
-         ${misc:Depends},
-         golang-go
+         ${misc:Depends}
 Description: EME wide-block encryption for Go.
  EME for Go is a wide-block encryption mode developed by Halevi and
  Rogaway in 2003 [eme]. (see references below)
