@@ -1,3 +1,12 @@
+golang-github-rfjakob-eme (1.0-2) unstable; urgency=medium
+
+  * Team upload.
+  * Use debhelper v10
+  * Use secure URLs for Vcs-Browser and Vcs-Git
+  * Build-Depends on golang-any instead of golang-go
+
+ -- Dr. Tobias Quathamer <toddy@debian.org>  Thu, 01 Dec 2016 22:28:10 +0100
+
 golang-github-rfjakob-eme (1.0-1) unstable; urgency=medium
 
   * Initial release (Closes: #839402)
