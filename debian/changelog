@@ -1,3 +1,10 @@
+golang-github-rfjakob-eme (1.1-1) UNRELEASED; urgency=medium
+
+  * New upstream version .
+  * Implement CI testing.
+
+ -- David Steele <steele@debian.org>  Sat, 18 Mar 2017 18:58:45 -0400
+
 golang-github-rfjakob-eme (1.0-2) unstable; urgency=medium
 
   * Team upload.
